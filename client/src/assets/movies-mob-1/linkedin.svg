@@ -1,0 +1,13 @@
+<svg id="linkedin" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="behavior_blog" transform="translate(-102 -2796)">
+    <path id="linkedin-2" data-name="linkedin" class="cls-1" d="M102.419,2816h4.2v-12.587h-4.2Zm2.1-14.965a2.517,2.517,0,1,1,2.517-2.518A2.507,2.507,0,0,1,104.517,2801.035ZM122,2816h-4.2v-7.412a2.1,2.1,0,1,0-4.2,0V2816h-4.2v-12.587h4.2v1.678a4.517,4.517,0,0,1,3.5-1.957,4.955,4.955,0,0,1,4.895,4.895Z"/>
+  </g>
+</svg>

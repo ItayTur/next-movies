@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="264" height="46" viewBox="0 0 264 46">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke:#1a1818;stroke-miterlimit:10;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Group_6354" transform="translate(-55 -947)">
+        <text id="Back_to_list" font-family="GTAlpina-Rg, GT Alpina" font-size="20px" transform="translate(201 958)">
+            <tspan x="0" y="18">Back to list</tspan>
+        </text>
+        <g id="Rectangle_92" fill="none" stroke="#000" transform="translate(55 947)">
+            <rect width="264" height="46" stroke="none" rx="23"/>
+            <rect width="263" height="45" x=".5" y=".5" rx="22.5"/>
+        </g>
+        <g id="Group_6194" transform="rotate(180 114.525 543.014)">
+            <path id="Path_16401" d="M147.131 124l5.3-6.6-5.3-6.6" class="cls-3" transform="translate(4.395 -1.102)"/>
+            <path id="Line_225" d="M18.949 0L0 0" class="cls-3" transform="translate(136.944 116.297)"/>
+        </g>
+    </g>
+</svg>

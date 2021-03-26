@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="146" height="26" viewBox="0 0 146 26">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#1a1818;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="Group_6335" transform="translate(-36 -434)">
+        <g id="Rectangle_2419" fill="none" stroke="#000" transform="translate(36 434)">
+            <rect width="146" height="26" stroke="none" rx="13"/>
+            <rect width="145" height="25" x=".5" y=".5" rx="12.5"/>
+        </g>
+        <g id="Group_6329" transform="translate(161.909 443.056)">
+            <path id="Path_16401" d="M147.131 118.211l2.978-3.707-2.978-3.707" class="cls-2" transform="translate(-138.943 -110.797)"/>
+            <path id="Line_225" d="M10.64 0L0 0" class="cls-2" transform="translate(0 3.707)"/>
+        </g>
+        <text id="Read_more" font-family="GTAlpina-Rg, GT Alpina" font-size="14px" transform="translate(46 438)">
+            <tspan x="0" y="13">Read more</tspan>
+        </text>
+    </g>
+</svg>
