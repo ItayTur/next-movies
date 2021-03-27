@@ -1,0 +1,9 @@
+.Rating {
+    display: flex;
+    align-items: center;
+    min-height: 1.4em;
+}
+
+.Icon {
+    margin-right: 4px;
+}

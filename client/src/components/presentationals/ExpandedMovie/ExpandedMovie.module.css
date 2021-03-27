@@ -1,0 +1,32 @@
+.ExpandedMovie {
+    display: flex;
+}
+
+.Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Title {
+    margin-bottom: 5px;
+}
+
+.Image {
+    margin-right: 30px;
+}
+
+.Back {
+    position: absolute;
+    bottom: 16px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}

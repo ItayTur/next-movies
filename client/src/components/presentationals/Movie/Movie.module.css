@@ -1,2 +1,15 @@
 .Movie {
+    width: 10vw;
+    height: 328px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Title {
+    min-height: 36px;
+}
+
+.Rating {
+    min-height: 1.4em;
 }

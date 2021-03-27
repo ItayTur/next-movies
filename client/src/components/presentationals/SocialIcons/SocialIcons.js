@@ -1,10 +1,10 @@
 import Icon from '../UI/Icon/Icon';
 
-import facebook from '../../../assets/movies-1/facebook.png';
-import linkedin from '../../../assets/movies-1/linkedin.png';
-import twitter from '../../../assets/movies-1/twitter.png';
-import instagram from '../../../assets/movies-1/instagram.png';
-import youtube from '../../../assets/movies-1/youtube.png';
+import facebook from '../../../assets/movies-1/facebook.svg';
+import linkedin from '../../../assets/movies-1/linkedin.svg';
+import twitter from '../../../assets/movies-1/twitter.svg';
+import instagram from '../../../assets/movies-1/instagram.svg';
+import youtube from '../../../assets/movies-1/youtube.svg';
 
 import classes from './SocialIcons.module.css';
 
