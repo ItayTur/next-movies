@@ -1,0 +1,19 @@
+.MoviesContainer {
+    background: rgb(0, 219, 255);
+    padding: 45px 0;
+}
+
+.Title {
+    text-align: center;
+    width: 590px;
+    margin: 0 auto 45px;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.Movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 90px;
+}
