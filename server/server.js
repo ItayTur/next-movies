@@ -10,7 +10,8 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 app.get('/movies', (req, res) => {
     res.header('Access-Control-Allow-Origin', '*');
-    res.send(movies);
+    const { search = '', limit = movies.length, skip = 0 } = req.query;
+    res.send(movies.slice(skip, Number(skip) + Number(limit)));
 });
 
 app.get('/movies/:id', (req, res) => {

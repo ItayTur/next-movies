@@ -1,7 +1,8 @@
 import Movie from '../Movie/Movie';
+import Button from '../UI/Button/Button';
 import classes from './Movies.module.css';
 
-const Movies = ({ movies, title, onOpenMovie }) => {
+const Movies = ({ movies, title, onOpenMovie, onShowMore }) => {
     const moviesToShow = movies.map(movie =>
     (
         <Movie
@@ -17,6 +18,7 @@ const Movies = ({ movies, title, onOpenMovie }) => {
             <div className={classes.Movies}>
                 {moviesToShow}
             </div>
+            <Button className={classes.ShowMore} onClick={onShowMore} ariaLabel="show more">Show More</Button>
         </div>
     );
 };

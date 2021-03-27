@@ -1,6 +1,8 @@
 .MoviesContainer {
     background: rgb(0, 219, 255);
     padding: 45px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .Title {
@@ -16,4 +18,10 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0 90px;
+}
+
+.ShowMore {
+    width: 25vw;
+    align-self: center;
+    margin-top: 28px;
 }

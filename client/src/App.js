@@ -12,14 +12,23 @@ import classes from './App.module.css';
 function App() {
   const [movies, setMovies] = useState([]);
   const [movie, setMovie] = useState(null);
+  const [skip, setSkip] = useState(0);
+  const limit = 14;
 
   useEffect(() => {
-    const asyncSetMovies = async () => {
-      const { data: moviesToSet } = await axios.get('movies');
-      setMovies(moviesToSet.slice(0, 14));
-    }
-    asyncSetMovies();
+    loadMovies();
   }, [])
+
+  const loadMovies = async () => {
+    const { data: moviesToSet } = await axios.get('movies', {
+      params: {
+        skip,
+        limit,
+      }
+    });
+    setMovies(prev => prev.concat(moviesToSet));
+    setSkip(prev => prev + limit);
+  }
 
   const closeMovie = () => setMovie(null);
 
@@ -34,6 +43,7 @@ function App() {
         title='EXPLORE YOUR NEXT MOVIES AND TV SHOWS'
         movies={movies}
         onOpenMovie={openMovie}
+        onShowMore={loadMovies}
       />
       <Footer />
       <Modal isOpen={Boolean(movie)} onClose={closeMovie}>
