@@ -1,9 +1,9 @@
 .Movie {
-    width: 10vw;
-    height: 328px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-bottom: 30px;
 }
 
 .Title {
@@ -12,4 +12,10 @@
 
 .Rating {
     min-height: 1.4em;
+}
+
+@media (max-width: 640px) {
+    .Movie {
+        width: 150px;
+    }
 }

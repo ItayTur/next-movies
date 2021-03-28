@@ -17,7 +17,7 @@ const ExpandedMovie = ({ title, image, synopsis, rating, runtime, type, onClose 
                     </div>
                     <Rating rating={rating} />
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: synopsis }} />
+                <div className={classes.Synopsis} dangerouslySetInnerHTML={{ __html: synopsis }} />
                 <Button className={classes.Back} onClick={onClose} ariaLabel="close">
                     <img src={arrow} alt="left arrow" />
                     <span>Back to list</span>

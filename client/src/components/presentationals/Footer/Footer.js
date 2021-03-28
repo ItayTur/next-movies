@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className={classes.Footer}>
             <h5 className={classes.Title}>CONTACT US</h5>
             <span>support@nextmovies.com</span>
-            <span>Mom-Fri | 6:00am - 5:00pm PT</span>
+            <span>Mon-Fri | 6:00am - 5:00pm PT</span>
             <SocialIcons />
         </footer>
     );

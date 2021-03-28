@@ -15,7 +15,7 @@ function App() {
   const [stateSkip, setSkip] = useState(0);
   const [stateSearch, setSearch] = useState('');
   const searchRef = useRef();
-  const limit = 14;
+  const limit = 12;
 
   useEffect(() => {
     loadMovies();

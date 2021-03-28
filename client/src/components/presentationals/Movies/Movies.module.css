@@ -17,8 +17,8 @@
 .Movies {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0 90px;
+    justify-content: space-between;
+    padding: 0 70px;
 }
 
 .ShowMore {
@@ -36,4 +36,16 @@
 
 .Search:focus {
     outline: none;
+}
+
+@media(max-width: 640px) {
+    .Title {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .Movies {
+        padding: 0;
+        justify-content: space-evenly;
+    }
 }
