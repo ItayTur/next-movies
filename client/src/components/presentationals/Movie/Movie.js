@@ -8,7 +8,7 @@ import classes from './Movie.module.css';
 const Movie = ({ title, image, rating, released, onOpen }) => {
     return (
         <div className={classes.Movie}>
-            <img src={image} alt={title} />
+            <img className={classes.Image} src={image} alt={title} />
             <div className={classes.Title}>{title}({released})</div>
             <Rating rating={rating}/>
             <Button onClick={onOpen} ariaLabel="read more">

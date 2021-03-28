@@ -14,6 +14,11 @@
     min-height: 1.4em;
 }
 
+.Image {
+    min-height: 280px;
+    object-fit: contain;
+}
+
 @media (max-width: 640px) {
     .Movie {
         width: 150px;
