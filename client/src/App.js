@@ -14,6 +14,7 @@ function App() {
   const [movie, setMovie] = useState(null);
   const [stateSkip, setSkip] = useState(0);
   const [stateSearch, setSearch] = useState('');
+  const [hasMoreMovies, setHasMoreMovies] = useState(true);
   const searchRef = useRef();
   const limit = 12;
 
@@ -29,6 +30,7 @@ function App() {
         search,
       }
     });
+    setHasMoreMovies(moviesToReturn.length >= limit)
     return moviesToReturn;
   }
 
@@ -64,6 +66,7 @@ function App() {
         onOpenMovie={openMovie}
         onShowMore={loadMovies}
         onSearch={searchMovies}
+        hasMoreMovies={hasMoreMovies}
       />
       <Footer />
       <Modal isOpen={Boolean(movie)} onClose={closeMovie}>
