@@ -1,6 +1,6 @@
 .MoviesContainer {
     background: rgb(0, 219, 255);
-    padding: 45px 0;
+    padding: 45px 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,8 +17,8 @@
 .Movies {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 70px;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .ShowMore {
@@ -47,5 +47,9 @@
     .Movies {
         padding: 0;
         justify-content: space-evenly;
+    }
+
+    .MoviesContainer {
+        padding: 0;
     }
 }
