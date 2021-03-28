@@ -11,7 +11,13 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.get('/movies', (req, res) => {
     res.header('Access-Control-Allow-Origin', '*');
     const { search = '', limit = movies.length, skip = 0 } = req.query;
-    res.send(movies.slice(skip, Number(skip) + Number(limit)));
+    let moviesToSend = [...movies];
+
+    if (search) {
+        moviesToSend = moviesToSend.filter(movie => movie.title.toLowerCase().includes(search.toLowerCase()));
+    }
+    
+    res.send(moviesToSend.slice(skip, Number(skip) + Number(limit)));
 });
 
 app.get('/movies/:id', (req, res) => {
