@@ -1,5 +1,8 @@
-import classes from './Modal.module.css';
+import { memo } from 'react';
+
 import Backdrop from '../Backdrop/Backdrop';
+
+import classes from './Modal.module.css';
 
 const Modal = ({ isOpen, children, onClose }) => {
     return (<>
@@ -16,4 +19,4 @@ const Modal = ({ isOpen, children, onClose }) => {
 }
 
 
-export default Modal;
+export default memo(Modal, (prevProps, nextProps) => prevProps.isOpen === nextProps.isOpen);

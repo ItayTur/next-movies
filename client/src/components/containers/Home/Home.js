@@ -4,6 +4,7 @@ import axios from '../../../moviesAxios';
 import Movies from '../../presentationals/Movies/Movies';
 import Modal from '../../presentationals/UI/Modal/Modal';
 import ExpandedMovie from '../../presentationals/ExpandedMovie/ExpandedMovie';
+import Button from '../../presentationals/UI/Button/Button';
 
 import classes from './Home.module.css';
 
@@ -55,14 +56,10 @@ function Home() {
 
   return (
     <div className={classes.Home}>
-      <Movies
-        title='EXPLORE YOUR NEXT MOVIES AND TV SHOWS'
-        movies={movies}
-        onOpenMovie={openMovie}
-        onShowMore={loadMovies}
-        onSearch={searchMovies}
-        hasMoreMovies={hasMoreMovies}
-      />
+      <h1 className={classes.Title}>EXPLORE YOUR NEXT MOVIES AND TV SHOWS</h1>
+      <input className={classes.Search} placeholder="Search..." onChange={searchMovies} />
+      <Movies movies={movies} onOpenMovie={openMovie} />
+      {hasMoreMovies && <Button className={classes.ShowMore} onClick={loadMovies} ariaLabel="show more">Show More</Button>}
       <Modal isOpen={Boolean(movie)} onClose={closeMovie}>
         <ExpandedMovie {...movie} onClose={closeMovie} />
       </Modal>
